@@ -1,7 +1,19 @@
 body {
-  padding-top: 50px;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
 }
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+    padding: 40px 15px;
+    text-align: center;
+}
+span.robomakery {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    color: #158cba;
+}
+
+html {
+    width: 100%;
+    height: 100%;
 }

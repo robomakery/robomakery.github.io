@@ -4,58 +4,142 @@ title: Robomakery
 
 {% include header.html %}
 
-<div class="starter-template">
-  <img src="images/RM_400x400.png" width="200" height="200" />
-  <h1>Robomakery</h1>
-  <p class="lead">Open source robots for people with mobility impairments</p>
+<div id="home" class="bs-component">
+  <br />
+  <div class="well well-lg">
+    <h1>Our Mission</h1>
+    <p class="lead">Accelerate development of affordable service robots for people with mobility impairments.</p>
+  </div>
+</div>
+<div id="about" class="page-header">
+  <h1>About</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        Robomakery was founded in 2014 by Dylan Vaughn ( <a title="LinkedIn" href="https://www.linkedin.com/in/dylanvaughn"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;<a title="GitHub" href="https://github.com/dylanvaughn"><i class="fa fa-github"></i></a> ) to bring advanced robotics and software research to the community of people impacted by mobility impairments.
+      </p>
+      </p>
+      <p>
+        We believe in:
+        <div class="bg-component">
+          <div class="list-group">
+            <span class="list-group-item">
+              <h4 class="list-group-item-heading">Open Source</h4>
+              <p class="list-group-item-text">All projects developed by Robomakery strive to be as open as possible. By releasing all software and hardware as open source, we can more directly share in the knowledge of the global open source / maker community.</p>
+            </span>
+            <span class="list-group-item">
+              <h4 class="list-group-item-heading">Specialization</h4>
+              <p class="list-group-item-text">Our robots are specialized to each solve a specific problem.  For example, the Spot robot picks items up from the floor and Stocker takes items in / out of shelves.  This allows us to customize the form to more directly solve the problem than a general purpose humanoid robot.</p>
+            </span>
+            <span class="list-group-item">
+              <h4 class="list-group-item-heading">Affordability</h4>
+              <p class="list-group-item-text">Service robots cannot fill their purpose if they are prohibitively expensive.  We hope to keep costs down by leveraging 3d-printing, standardized parts, and our open development model.</p>
+            </span>
+          </div>
+        </div>
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="row">
-  <div class="col-md-8">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Current Projects</h2>
+<div id="projects" class="page-header">
+  <h1>Projects</h1>
+</div>
+<div>
+  <div class="row multi-columns-row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Wheeled Base</h3>
+          </div>
+          <div class="panel-body">
+            <p>
+              The Wheeled Base is a ROS-powered, 3d-printed mobile base.  It will serve as the foundation for other projects, such as the Spot robot.
+            </p>
+            <div class="bg-component">
+              <div class="list-group">
+                <a class="list-group-item" href="https://github.com/robomakery/wheeled-base" title="Wheeled Base on GitHub"><i class="fa fa-github fa-lg"></i> &nbsp;Source code on GitHub</a>
+                <a class="list-group-item" href="https://trello.com/b/tdWniHWv/wheeled-base-development" title="Wheeled Base Development Trello Board"><i class="fa fa-trello fa-lg"></i> &nbsp;Project planning on Trello</a>
+                <a class="list-group-item" href="https://groups.google.com/forum/#!forum/robomakery-wheeled-base" title="Wheeled Base Mailing List"><i class="fa fa-envelope fa-lg"></i> Discussion on Google Groups</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">Status: In Development</div>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Spot</h3>
-        <p>
-          Spot is a small wheeled robot that is designed to help people pick up small objects from the floor (like a remote control or phone).
-        </p>
-        <p>
-          Learn more: <a href="https://github.com/robomakery/spot">https://github.com/robomakery/spot</a>
-        </p>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Spot</h3>
+          </div>
+          <div class="panel-body">
+            <p>Spot is a semi-autonomous wheeled robot (using the Wheeled Base) that can pick items up off the floor and lift them to counter height to be retrieved by an operator.</p>
+            <div class="bg-component">
+              <div class="list-group">
+                <a class="list-group-item" href="https://github.com/robomakery/spot" title="Spot on GitHub"><i class="fa fa-github fa-lg"></i> &nbsp;Source code on GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">Status: Researching</div>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <h3>Walkchair</h3>
-        <p>
-          Walkchair is a project exploring how to add legs to power wheelchairs for increased mobility.
-        </p>
-        <p>
-          Learn more: <a href="http://www.walkchair.org">http://www.walkchair.org</a>
-        </p>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Stocker</h3>
+          </div>
+          <div class="panel-body">
+            <p>Stocker is a stationary robot with arms that can take items in and out of shelves or cupboards.</p>
+          </div>
+          <div class="panel-footer">Status: Researching</div>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Contact</h2>
-        <p>
-          hello [at] robomakery [dot] com
-        </p>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Walkchair</h3>
+          </div>
+          <div class="panel-body">
+            <p>A power wheelchair that has legs in addition to wheels for added mobility.</p>
+            <div class="bg-component">
+              <div class="list-group">
+                <a class="list-group-item" href="http://www.pinterest.com/walkchair/interesting-technology/" title="Interesting Technology Pinterest Board"><i class="fa fa-pinterest fa-lg"></i> &nbsp;Interesting Tech Pinterest Board</a>
+                <a class="list-group-item" href="https://twitter.com/walkchairrobot" title="Walkchair on Twitter"><i class="fa fa-twitter fa-lg"></i> &nbsp;Walkchair on Twitter</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">Status: Researching</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="bs-component">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3>Open Powerchair</h3>
+          </div>
+          <div class="panel-body">
+            A completely open source hardware and software power wheelchair.
+          </div>
+          <div class="panel-footer">Status: Planned</div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <a class="twitter-timeline" href="https://twitter.com/robomakery" data-widget-id="491688851551711232">Tweets by @robomakery</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </div>
+</div>
+
+<div id="news" class="page-header">
+  <h1>News</h1>
+</div>
+<div class="row multi-columns-row">
+  <p id="news-content"></p>
 </div>
 
 {% include footer.html %}
