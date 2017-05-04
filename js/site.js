@@ -11,26 +11,6 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  // pull in news
-  var renderTweets = function(tweets) {
-    var html = '';
-    for (var i = 0; i < tweets.length; i++) {
-      html += '<div class="col-lg-3"><div class="bg-component"><div class="well well-sm">';
-      html += tweets[i];
-      html += '</div></div></div>';
-    }
-    $('#news-content').html(html);
-    $(window).resize();
-  }
-  var twitterConfig = {
-    'id': '491688851551711232',
-    'domId': '',
-    'maxTweets': 10,
-    'showInteraction': false,
-    'customCallback': renderTweets
-  };
-  twitterFetcher.fetch(twitterConfig);
-
   // http://www.jquerybyexample.net/2012/06/get-url-parameters-using-jquery.html
   function GetURLParameter(sParam) {
     var sPageURL = window.location.search.substring(1);
